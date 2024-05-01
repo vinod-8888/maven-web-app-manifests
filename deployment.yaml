@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: maven-web-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: maven-web-app
+  template:
+    metadata:
+      labels:
+        app: maven-web-app
+    spec:
+      containers:
+      - name: maven-web-app
+        image: vinod99998888/maven-web-app:1
+        ports:
+        - containerPort: 80
+
