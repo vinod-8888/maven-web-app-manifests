@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: maven-web-app
-        image: vinod99998888/maven-web-app:3e2edf69ecc67f20484b8165bfedb5bc0795a5b7
+        image: vinod99998888/maven-web-app:425652e324fd9ea465c1933c6fcdad1991a0394d
         ports:
         - containerPort: 80
 
